@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8e08201cec45666458ce8302959c3f09
-timeCreated: 1429064644
+timeCreated: 1543841339
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -82,7 +82,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -106,664 +106,862 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 72
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: CardDeck_72x100_0
+    - serializedVersion: 2
+      name: CardDeck_72x100_0
       rect:
         serializedVersion: 2
         x: 0
         y: 400
         width: 72
         height: 100
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_1
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_1
       rect:
         serializedVersion: 2
         x: 72
         y: 400
         width: 72
         height: 100
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_2
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_2
       rect:
         serializedVersion: 2
         x: 144
         y: 400
         width: 72
         height: 100
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_3
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_3
       rect:
         serializedVersion: 2
         x: 216
         y: 400
         width: 72
         height: 100
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_4
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_4
       rect:
         serializedVersion: 2
         x: 288
         y: 400
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_5
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_5
       rect:
         serializedVersion: 2
         x: 360
         y: 400
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_6
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_6
       rect:
         serializedVersion: 2
         x: 432
         y: 400
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_7
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_7
       rect:
         serializedVersion: 2
         x: 504
         y: 400
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_8
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_8
       rect:
         serializedVersion: 2
         x: 576
         y: 400
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_9
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_9
       rect:
         serializedVersion: 2
         x: 648
         y: 400
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_10
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_10
       rect:
         serializedVersion: 2
         x: 720
         y: 400
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_11
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_11
       rect:
         serializedVersion: 2
         x: 792
         y: 400
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_12
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_12
       rect:
         serializedVersion: 2
         x: 864
         y: 400
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_13
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_13
       rect:
         serializedVersion: 2
         x: 0
         y: 300
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_14
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_14
       rect:
         serializedVersion: 2
         x: 72
         y: 300
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_15
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_15
       rect:
         serializedVersion: 2
         x: 144
         y: 300
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_16
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_16
       rect:
         serializedVersion: 2
         x: 216
         y: 300
         width: 72
         height: 100
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_17
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_17
       rect:
         serializedVersion: 2
         x: 288
         y: 300
         width: 72
         height: 100
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_18
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_18
       rect:
         serializedVersion: 2
         x: 360
         y: 300
         width: 72
         height: 100
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_19
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_19
       rect:
         serializedVersion: 2
         x: 432
         y: 300
         width: 72
         height: 100
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_20
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_20
       rect:
         serializedVersion: 2
         x: 504
         y: 300
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_21
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_21
       rect:
         serializedVersion: 2
         x: 576
         y: 300
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_22
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_22
       rect:
         serializedVersion: 2
         x: 648
         y: 300
         width: 72
         height: 100
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_23
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_23
       rect:
         serializedVersion: 2
         x: 720
         y: 300
         width: 72
         height: 100
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_24
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_24
       rect:
         serializedVersion: 2
         x: 792
         y: 300
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_25
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_25
       rect:
         serializedVersion: 2
         x: 864
         y: 300
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_26
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_26
       rect:
         serializedVersion: 2
         x: 0
         y: 200
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_27
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_27
       rect:
         serializedVersion: 2
         x: 72
         y: 200
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_28
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_28
       rect:
         serializedVersion: 2
         x: 144
         y: 200
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_29
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_29
       rect:
         serializedVersion: 2
         x: 216
         y: 200
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_30
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_30
       rect:
         serializedVersion: 2
         x: 288
         y: 200
         width: 72
         height: 100
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_31
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_31
       rect:
         serializedVersion: 2
         x: 360
         y: 200
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_32
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_32
       rect:
         serializedVersion: 2
         x: 432
         y: 200
         width: 72
         height: 100
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_33
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_33
       rect:
         serializedVersion: 2
         x: 504
         y: 200
         width: 72
         height: 100
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_34
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_34
       rect:
         serializedVersion: 2
         x: 576
         y: 200
         width: 72
         height: 100
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_35
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_35
       rect:
         serializedVersion: 2
         x: 648
         y: 200
         width: 72
         height: 100
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_36
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_36
       rect:
         serializedVersion: 2
         x: 720
         y: 200
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_37
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_37
       rect:
         serializedVersion: 2
         x: 792
         y: 200
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_38
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_38
       rect:
         serializedVersion: 2
         x: 864
         y: 200
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_39
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_39
       rect:
         serializedVersion: 2
         x: 0
         y: 100
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_40
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_40
       rect:
         serializedVersion: 2
         x: 72
         y: 100
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_41
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_41
       rect:
         serializedVersion: 2
         x: 144
         y: 100
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_42
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_42
       rect:
         serializedVersion: 2
         x: 216
         y: 100
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_43
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_43
       rect:
         serializedVersion: 2
         x: 288
         y: 100
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_44
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_44
       rect:
         serializedVersion: 2
         x: 360
         y: 100
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_45
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_45
       rect:
         serializedVersion: 2
         x: 432
         y: 100
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_46
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_46
       rect:
         serializedVersion: 2
         x: 504
         y: 100
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_47
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_47
       rect:
         serializedVersion: 2
         x: 576
         y: 100
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_48
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_48
       rect:
         serializedVersion: 2
         x: 648
         y: 100
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_49
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_49
       rect:
         serializedVersion: 2
         x: 720
         y: 100
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_50
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_50
       rect:
         serializedVersion: 2
         x: 792
         y: 100
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_51
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_51
       rect:
         serializedVersion: 2
         x: 864
         y: 100
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_52
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_52
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_53
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_53
       rect:
         serializedVersion: 2
         x: 72
         y: 0
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_54
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_54
       rect:
         serializedVersion: 2
         x: 144
         y: 0
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_55
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_55
       rect:
         serializedVersion: 2
         x: 216
         y: 0
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_56
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_56
       rect:
         serializedVersion: 2
         x: 288
         y: 0
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_57
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_57
       rect:
         serializedVersion: 2
         x: 360
         y: 0
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_58
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_58
       rect:
         serializedVersion: 2
         x: 432
         y: 0
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_59
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_59
       rect:
         serializedVersion: 2
         x: 504
         y: 0
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_60
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_60
       rect:
         serializedVersion: 2
         x: 576
         y: 0
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_61
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_61
       rect:
         serializedVersion: 2
         x: 648
         y: 0
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_62
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_62
       rect:
         serializedVersion: 2
         x: 720
         y: 0
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_63
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_63
       rect:
         serializedVersion: 2
         x: 792
         y: 0
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: CardDeck_72x100_64
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CardDeck_72x100_64
       rect:
         serializedVersion: 2
         x: 864
         y: 0
         width: 72
         height: 100
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

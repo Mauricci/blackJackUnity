@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CardModel : MonoBehaviour {
+public class CardModel : MonoBehaviour 
+{
 
 	SpriteRenderer spriteRenderer;
 
