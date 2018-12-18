@@ -2,9 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Deck : MonoBehaviour 
+public class CardStack : MonoBehaviour 
 {
 	List<int> cards;
+
+
+    //to access cards publicly
+    public IEnumerable<int> GetCards()
+    {
+        foreach(int i in cards)
+        {
+            yield return i;
+        }
+    }
 
 	public void Shuffle()
 	{
