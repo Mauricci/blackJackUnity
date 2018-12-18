@@ -6,6 +6,27 @@ public class CardStack : MonoBehaviour
 {
 	List<int> cards;
 
+    public bool isGameDeck;
+
+    public bool HasCards
+    {
+        get { return cards != null && cards.Count > 0;  }
+    }
+
+    public int CardCount
+    {
+        get
+        {
+            if (cards == null)
+            {
+                return 0;
+            }
+            else
+            {
+                return cards.Count;
+            }
+        }
+    }
 
     //to access cards publicly
     public IEnumerable<int> GetCards()
@@ -16,15 +37,21 @@ public class CardStack : MonoBehaviour
         }
     }
 
-	public void Shuffle()
+    public int Pop()
+    {
+        int temp = cards[0];
+        cards.RemoveAt(0);
+        return temp;
+    }
+
+    public void Push(int card)
+    {
+        cards.Add(card);
+    }
+
+	public void CreateDeck()
 	{
-		if (cards == null) {
-			cards = new List<int> ();
-		} 
-		else
-		{
-			cards.Clear ();
-		}
+		cards.Clear();
 
 		for (int i = 0; i < 52; i++) 
 		{
@@ -43,6 +70,11 @@ public class CardStack : MonoBehaviour
 	}
 
 	void Start () {
-		Shuffle ();
-	}
+        cards = new List<int>();
+
+        if(isGameDeck)
+        {
+            CreateDeck();
+        }
+    }
 }
