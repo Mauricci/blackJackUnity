@@ -6,19 +6,31 @@ using UnityEngine;
 public class CardStackView : MonoBehaviour
 {
     CardStack deck;
-    List<int> fetchedCards;
+    Dictionary<int, GameObject> fetchedCards;
     int lastCount;
 
     public Vector3 start;
     public float cardOffset;
+    public bool faceUp = false;
     public GameObject cardPrefab;
 
     private void Start()
     {
-        fetchedCards = new List<int>();
+        fetchedCards = new Dictionary<int, GameObject>();
         deck = GetComponent<CardStack>();
         ShowCards();
         lastCount = lastCount - deck.CardCount;
+
+        deck.CardRemoved += deck_CardRemoved;
+    }
+
+    private void deck_CardRemoved(object sender, CardRemovedEventArgs e)
+    {
+        if(fetchedCards.ContainsKey(e.CardIndex))
+        {
+            Destroy(fetchedCards[e.CardIndex]);
+            fetchedCards.Remove(e.CardIndex);
+        }
     }
 
     private void Update()
@@ -50,7 +62,7 @@ public class CardStackView : MonoBehaviour
 
     void AddCard(Vector3 position, int cardIndex, int positionIndex)
     {
-        if(fetchedCards.Contains(cardIndex))
+        if(fetchedCards.ContainsKey(cardIndex))
         {
             return;
         }
@@ -62,13 +74,13 @@ public class CardStackView : MonoBehaviour
         //flip card over to show face
         CardModel cardModel = cardCopy.GetComponent<CardModel>();
         cardModel.cardIndex = cardIndex;
-        cardModel.ToggleFace(true);
+        cardModel.ToggleFace(faceUp);
 
         //to sort which order to render the cards (to get the latest card behind the previous
         SpriteRenderer spriteRenderer = cardCopy.GetComponent<SpriteRenderer>();
         spriteRenderer.sortingOrder = positionIndex; //51 - positionInedex  to order it the other way
 
-        fetchedCards.Add(cardIndex);
+        fetchedCards.Add(cardIndex, cardCopy);
     }
 
 }
