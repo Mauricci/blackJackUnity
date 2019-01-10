@@ -20,7 +20,7 @@ public class CardStackView : MonoBehaviour
         fetchedCards[cardNum].IsFaceUp = isFaceUp;
     }
 
-    private void Start()
+    void Awake()
     {
         fetchedCards = new Dictionary<int, CardView>();
         deck = GetComponent<CardStack>();
@@ -28,9 +28,17 @@ public class CardStackView : MonoBehaviour
         lastCount = lastCount - deck.CardCount;
 
         deck.CardRemoved += deck_CardRemoved;
+        deck.CardAdded += deck_CardAdded;
     }
 
-    private void deck_CardRemoved(object sender, CardRemovedEventArgs e)
+    void deck_CardAdded(object sender, CardEventArgs e)
+    {
+        float offset = cardOffset * deck.CardCount;
+        Vector3 temp = start + new Vector3(offset, 0f);
+        AddCard(temp, e.CardIndex, deck.CardCount);
+    }
+
+     void deck_CardRemoved(object sender, CardEventArgs e)
     {
         if(fetchedCards.ContainsKey(e.CardIndex))
         {
@@ -39,7 +47,7 @@ public class CardStackView : MonoBehaviour
         }
     }
 
-    private void Update()
+    void Update()
     {
         if(lastCount != deck.CardCount)
         {

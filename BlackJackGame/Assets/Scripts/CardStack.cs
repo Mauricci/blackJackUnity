@@ -13,7 +13,8 @@ public class CardStack : MonoBehaviour
         get { return cards != null && cards.Count > 0;  }
     }
 
-    public event CardRemovedEventHandler CardRemoved;
+    public event CardEventHandler CardRemoved;
+    public event CardEventHandler CardAdded;
 
     public int CardCount
     {
@@ -46,7 +47,7 @@ public class CardStack : MonoBehaviour
 
         if(CardRemoved != null)
         {
-            CardRemoved(this, new CardRemovedEventArgs(temp));
+            CardRemoved(this, new CardEventArgs(temp));
         }
 
         return temp;
@@ -55,6 +56,11 @@ public class CardStack : MonoBehaviour
     public void Push(int card)
     {
         cards.Add(card);
+
+        if(CardAdded != null)
+        {
+            CardAdded(this, new CardEventArgs(card));
+        }
     }
 
     public int HandValue()

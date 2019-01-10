@@ -1,12 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
+
+    int dealersFirstCard = -1;
 
     public CardStack player;
     public CardStack dealer;
     public CardStack deck;
+
+    public Button hitButton;
+    public Button stickButton;
 
     /*
      * Cards dealt to each player
@@ -15,6 +21,29 @@ public class GameController : MonoBehaviour {
      * Dealer cards: first card hidden, subsequent card are facing
      * 
      */
+
+    #region Public methods
+
+    public void Hit()
+    {
+        player.Push(deck.Pop());
+        if(player.HandValue() > 21)
+        {
+            //TODO: player is bust
+            hitButton.interactable = false;
+            stickButton.interactable = false;
+        }
+    }
+
+    public void Stick()
+    {
+        hitButton.interactable = false;
+        stickButton.interactable = false;
+
+        StartCoroutine(DealersTurn());
+    }
+
+    #endregion
 
     #region Unity messages
 
@@ -38,6 +67,12 @@ public class GameController : MonoBehaviour {
     void HitDealer()
     {
         int card = deck.Pop();
+
+        if(dealersFirstCard < 0)
+        {
+            dealersFirstCard = card;
+        }
+
         dealer.Push(card);
 
         if(dealer.CardCount >= 2)
@@ -47,4 +82,17 @@ public class GameController : MonoBehaviour {
         }
     }
 
+    IEnumerator DealersTurn()
+    {
+
+
+        while (dealer.HandValue() < 17)
+        {
+            HitDealer();
+            yield return new WaitForSeconds(1f);
+        }
+
+        CardStackView view = dealer.GetComponent<CardStackView>();
+        view.Toggle(dealersFirstCard, true);
+    }
 }
