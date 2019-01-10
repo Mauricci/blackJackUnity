@@ -124,6 +124,11 @@ public class CardStack : MonoBehaviour
 		}
 	}
 
+    public void Reset()
+    {
+        cards.Clear();
+    }
+
 	void Awake() {
         cards = new List<int>();
 

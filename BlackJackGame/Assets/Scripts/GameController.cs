@@ -33,9 +33,10 @@ public class GameController : MonoBehaviour {
         player.Push(deck.Pop());
         if(player.HandValue() > 21)
         {
-            //TODO: player is bust
             hitButton.interactable = false;
             stickButton.interactable = false;
+            StartCoroutine(DealersTurn());
+
         }
     }
 
@@ -45,6 +46,25 @@ public class GameController : MonoBehaviour {
         stickButton.interactable = false;
 
         StartCoroutine(DealersTurn());
+    }
+
+    public void PlayAgain()
+    {
+        playAgainButton.interactable = false;
+
+        player.GetComponent<CardStackView>().Clear();
+        dealer.GetComponent<CardStackView>().Clear();
+        deck.GetComponent<CardStackView>().Clear();
+        deck.CreateDeck();
+
+        winnerText.text = "";
+
+        hitButton.interactable = true;
+        stickButton.interactable = true;
+
+        dealersFirstCard = -1;
+
+        StartGame();
     }
 
     #endregion
@@ -88,6 +108,9 @@ public class GameController : MonoBehaviour {
 
     IEnumerator DealersTurn()
     {
+        hitButton.interactable = false;
+        stickButton.interactable = false;
+
         CardStackView view = dealer.GetComponent<CardStackView>();
         view.Toggle(dealersFirstCard, true);
         view.ShowCards();
