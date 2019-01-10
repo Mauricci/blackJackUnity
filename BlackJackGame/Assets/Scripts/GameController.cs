@@ -13,8 +13,12 @@ public class GameController : MonoBehaviour {
 
     public Button hitButton;
     public Button stickButton;
+    public Button playAgainButton;
 
-    /*
+    public Text winnerText;
+
+    /* Rules:
+     * 
      * Cards dealt to each player
      * First player hits/sticks/bust
      * Dealer's turn, must have minimum of 17 score hand before stick
@@ -84,7 +88,10 @@ public class GameController : MonoBehaviour {
 
     IEnumerator DealersTurn()
     {
-
+        CardStackView view = dealer.GetComponent<CardStackView>();
+        view.Toggle(dealersFirstCard, true);
+        view.ShowCards();
+        yield return new WaitForSeconds(1f);
 
         while (dealer.HandValue() < 17)
         {
@@ -92,7 +99,21 @@ public class GameController : MonoBehaviour {
             yield return new WaitForSeconds(1f);
         }
 
-        CardStackView view = dealer.GetComponent<CardStackView>();
-        view.Toggle(dealersFirstCard, true);
+        // Win/lose conditions
+        if(player.HandValue() > 21 || (dealer.HandValue() >= player.HandValue() && dealer.HandValue() <= 21))
+        {
+            winnerText.text = "Dealer win!";
+        }
+        else if (dealer.HandValue() > 21 || (player.HandValue() <= 21 && player.HandValue() > dealer.HandValue()))
+        {
+            winnerText.text = "You win!";
+        }
+        else
+        {
+            winnerText.text = "The house wins!";
+        }
+
+        yield return new WaitForSeconds(1f);
+        playAgainButton.interactable = true;
     }
 }

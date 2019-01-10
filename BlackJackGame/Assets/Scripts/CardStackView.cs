@@ -49,14 +49,14 @@ public class CardStackView : MonoBehaviour
 
     void Update()
     {
-        if(lastCount != deck.CardCount)
+         if(lastCount != deck.CardCount)
         {
             lastCount = lastCount - deck.CardCount;
             ShowCards();
         }
     }
 
-    void ShowCards()
+    public void ShowCards()
     {
 
         int cardCount = 0;              //position in hand
