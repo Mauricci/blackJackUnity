@@ -11,3 +11,4 @@ Some future improvements that will be added as soon as there's time to do so (in
 * Credits/cash to bet
 * Menus and hi-scores
 * Refactoring
+* Make sure game objects aren't affected by screen resolution
