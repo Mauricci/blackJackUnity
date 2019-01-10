@@ -118,7 +118,7 @@ public class CardStack : MonoBehaviour
 		}
 	}
 
-	void Start () {
+	void Awake() {
         cards = new List<int>();
 
         if(isGameDeck)
